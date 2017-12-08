@@ -4,10 +4,10 @@
 //{{{
 function firstFive() {
 	var arrQs = ['Do I like whales? Y/n',
-							 'Do I like to *eat* whales? [Y/n]',
-							 'Am I a sailor? [Y/n]',
-							 'Do I like to *eat* sailors? [Y/n]',
-							 'Do I like bananas? [Y/n]'];
+               'Do I like to *eat* whales? [Y/n]',
+               'Am I a sailor? [Y/n]',
+               'Do I like to *eat* sailors? [Y/n]',
+               'Do I like bananas? [Y/n]'];
 	var arrAs = [ true, false, true, false, true ];
 
 	for (var i = 0; i < arrQs.length; ++i) {
@@ -16,7 +16,7 @@ function firstFive() {
 		answer = answer.toLowerCase();
 		if (answer !=='y' && answer !=='yes' && answer !== 'n' && answer != 'no') alert('Invalid input'); //validate input
 		else if ((arrAs[i] && (answer==='y' || answer==='yes')) ||
-						 (!arrAs[i] && (answer==='n' || answer==='no'))) alert('You\'re right!')
+             (!arrAs[i] && (answer==='n' || answer==='no'))) alert('You\'re right!')
 		else alert('You\'re wrong.');
 	}
 }
@@ -47,15 +47,15 @@ function guessingGame() {
 //absolutely unreasonable favorite color guessing game
 //{{{
 var favColors = ['blue',
-								 'violet',
-								 'mauve',
-								 'the color of the moon',
-								 'noir!',
-								 'blache for that matter',
-								 'plaid (red/brown/white only, all others are suboptimal)',
-								 'verdant',
-								 'carmine (I just heard this somewhere)',
-								 'THE COLOR OF NIGHT. SUP'];
+                 'violet',
+                 'mauve',
+                 'the color of the moon',
+                 'noir!',
+                 'blache for that matter',
+                 'plaid (red/brown/white only, all others are suboptimal)',
+                 'verdant',
+                 'carmine (I just heard this somewhere)',
+                 'THE COLOR OF NIGHT. SUP'];
 
 function colorGame() {
 	var numGuesses = 6;
